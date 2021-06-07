@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Card</title>
+        <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.1.1.js">
+    </script>
+    <style>
+        body {
+    font-family:times;
+    color:white;
+    background-color:black;
+    font-size:12px;
+}
+h1{
+    text-align:center ;
+    margin-top:5px;
+}
+#main{
+    background-color:green;
+}
+#me{
+    border-radius:125px;
+    width:50px;
+    height:auto;
+    float:left;
+    margin-left:5px;
+}
+#fom{
+position:fied;
+    text-align:right;
+    float:left;
+    width:350px;
+    border:1px solid white ;
+    eight:245px; 
+    background-size:350px auto;
+    background-repeat:no-repeat ;
+    margin-left:-2px;
+    
+}
+input:focus{
+    outline: none !important;
+    border-bottom-color:rgb(225,0,0);
+}
+input{
+    border:none ;
+    border-bottom:1px solid black;
+    margin-right:150px;
+    width:100px;
+    background-color:transparent ;
+    color:white;
+}
+s{
+    width:50px;
+    margin-right:200px;
+}
+img{
+    width:130px;
+    height:125px;
+    text-align:center;
+}
+#im{
+    margin-right:0px;
+    text-align:left;
+    width:130px;
+    display:inline-block ;
+    float:right;
+    margin-top:-150px;
+}
+
+body {
+    
+}
+#d{
+    width:350px;
+    eight:245px;
+   border:1px solid white; background-image:url("https://dl.dropbox.com/s/kjw8ry5rynpy130/avatars-dgdv5wc0s72pakfr-egkvva-t240x240.jpg?");
+    background-size:350px 245px;
+    font-size:8px;
+}
+#di{
+    width:350px;
+    height:80px;
+    background-color:rgb(0,0,0,0.8);
+}
+#dd{
+   margin-left:7px; 
+}
+#dc{
+    width:75px;
+    height:auto;
+    float:left;
+}
+#dce{
+    width:25px;
+    height:10px;
+    border-radius:20px;
+    margin-top:10px;
+    margin-left:160px;
+}
+#dcc{
+    width:45px;
+    height:auto;
+    float:right;
+    margin-right:-33px;
+    margin-top:1px;
+}
+#db{
+    width:300px;
+    font-size:11px;
+}
+#d{
+    margin-top:300px;
+    color:black;
+    margin-left:-3px;
+}
+#dev{
+    margin-top:10px;
+    color:white;
+    background-color:blue;
+}
+#da{
+    width:250px;
+    height:50px;
+    background-image:url("?");
+}
+    </style>
+    
+    </head>
+    <body>   
+    <div id="dev">
+ <input id="bg"placeholder="background_img path">
+ <br />
+ <input id="mg" placeholder="image path">
+ <br />
+ <input id="h1" placeholder="The Future Coder">
+ <br />
+ <input id="ed" placeholder="Education: self-T">
+ <br />
+ <input id="na" placeholder="devfemibadmus">  
+ <br />
+ <input id="em" placeholder="devfemibadmus@gmail.com">
+ <br />
+ <input id="ww" placeholder="www.facebook.com/devfemibadmus">
+   <button>reset</button>    
+       </div>     
+<br />
+<br />
+                            
+         <div id="fom" style='background-image: url("https://dl.dropbox.com/s/7jq2cy0gftvfzwy/basic%20recursive%20tree~2.jpg?")'>
+         <br />
+         <img id="me" src="https://dl.dropbox.com/s/c636k75ko9yingh/uar_rugby_logo.png?"><h1>#I Don Paste My "aza"</h1><br>
+      <span>Surname :</span> <input  type="text"><br /><br />
+      <span>Other Names :</span> <input id="ot" type="text"><br /><br />
+      <span >D.O.R :</span> <input id="s" type="number"><br /><br />
+      <span >Sex :</span> <input id="s" type="text"><br /><br />
+      <span >ID No :</span> <input id="s" type="text"><br />          
+       <span id="im"><center> <img id="my" src="https://dl.dropbox.com/s/2ntmm99230r99p1/img_20210505_181333_423.jpg?"></center>           <v>
+<span id="edd">I Pledge To Serve</span><br />
+ U.A.R My Country</span><br />      
+        </div>
+        
+         <div id="d"><br>
+           <a id="www"href="#">www.facebook.com/UAR</a>
+           <div id="di">             
+           </div id="di">
+           
+           <div id="dd">
+           AUTHORIZED SIGNATURE NOT VALID UNLESS SIGNED
+           <div id="da">
+           </div> <br /> 
+           <div id="db">
+               <img id="dc" src="?"> This card should be used in accordance with U.A.R terms and conditions.<br> <br>24 Hours UPDATES visit(<a id="naaa" href="#">@UAR</a>) or send an email to <span id="emm">devfemibadmus@gmail.com</span><img id="dcc" src="?">
+           </div>                             
+           </div>   <br>
+           
+          <img id="dce" src="?">       
+       </div> 
+  <script>
+      $(document).ready(function(){
+var h = $("#h1")
+var na = $("#na")
+var d = $("#doo")
+var id = $("#idd")
+var se = $("#see")
+var ot = $("#ott")
+var mg = $("#mg")
+/*bg = '"'+bg.val()+'"'
+mg = mg.val()
+alert(mg)*/
+$("button").click(function(){
+    
+    $("#my").attr("src", mg.val())
+    $("h1").text(h.val())
+  /*  $("#se").text(se.val())    
+    $("#na").text(na.val())
+    $("#ot").text(ot.val())
+    $("#id").text(id.val())
+    $("#do").text(do.val())*/
+})
+});        
+  </script>     
+      <br /> 
+    </body>
+</html>
