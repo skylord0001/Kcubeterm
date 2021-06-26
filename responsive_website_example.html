@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        /* Thank you so much for so many upvotes in my 1st code that really hyped me to do some more so here it is and hope you all like it*/ 
+/*NOTE: Intrested may use this as template*/
+
+@import url('link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"');
+
+*
+{
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+}
+
+body
+{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;;
+    text-align: center;
+}
+
+img
+{
+    max-width: 100%
+    height: auto;
+}
+
+.container
+{
+    width: 95%;
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+.clearfix::after,
+section::after,
+footer::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/*Column system*/
+
+[class^=col-] {
+    width: 100%;
+    margin-top: 1em;
+}
+
+[class^=col-]:first-child {
+    margin-top: 0;
+}
+
+.col-1 {
+    width: 33.333334%;
+    float: left;
+}
+
+
+@media (min-width: 40rem) {
+
+    [class^=col-] {
+        float: left;
+        padding: 0 .5em;
+        margin-top: 0;
+    }
+
+    [class^=col-]:first-child {
+        padding-left: 0;
+    }
+
+    [class^=col-]:last-child {
+        padding-right: 0;
+    }
+
+    .col-3 {
+        width: 50%;
+    }
+
+    .col-1 {
+        width: 16.6666%;
+    }
+}
+
+/*typography*/
+h1
+{
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-top: 0;
+
+}
+
+p
+{
+    margin-top: 0;
+    line-height: 2.75;
+}
+
+p:last-of-type{
+    margin-bottom: 0;
+}
+
+.title
+{
+    font-size: 2.5rem;
+    margin-bottom:1.5em;
+    font-weight: 900;
+    margin-top: 1em;
+}
+
+.title span
+{
+    font-weight: 300;
+    display: block;
+    font-size: .9em;
+}
+
+.title-cta {
+    margin: 0 0 .5em;
+}
+
+.unstyled-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@media (min-width:60rem) {
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    .title {
+        font-size: 3.7rem;
+    }
+}
+
+
+/*buttons*/
+.button
+{
+    display: inline-block;
+    font-size: 1.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.75em;
+}
+
+@media (min-width: 60rem){
+    .button{
+        font-size:1.5rem; 
+    }
+}
+
+.button-small 
+{
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+.button-accent
+{
+    color: #00ff6c;
+    border-color: #00ff6c;
+}
+
+.button-accent:hover,
+.button-accent:focus{
+    background: #00ff6c;
+    color: #232323;
+}
+
+.button-dark {
+    color: #232323;
+    border-color: #232323;
+}
+
+.button-dark:hover,
+.button-dark:focus {
+    background: #232323;
+    color: #00ff6c;
+}
+
+/* Parallax*/
+
+/*.parallax--bg,
+.parallax--box {
+    transition: initial;
+}
+
+/* header */
+header
+{
+    position: absolute; 
+    left: 0;
+    right: 0;
+    margin: 1em;
+}
+
+nav ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li
+{
+    display: inline-block;
+    margin: 1em;
+}
+
+nav a
+{
+    font-weight: 900;
+    text-decoration: none;
+    padding: .5em;
+    text-transform: upprcase;
+    color: #FFF;
+    font-size: .8rem;
+}
+
+nav a:hover,
+nav a:focus{
+    color: #ddd;
+}
+
+@media(min-width:60rem)
+{
+    .logo{
+        float: left;
+    }
+
+    nav{
+        float: right;
+    }
+}
+
+/* home-hero */
+.home-hero
+{
+    background-image: url(https://i.postimg.cc/rpYRTfjP/Background1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 14em 0; 
+    color: #FFF;
+}
+
+@media (min-width: 60rem){
+    .home-hero{
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
+
+/*home-about*/
+.home-about-textbox
+{
+    background-color: #232323;
+    padding: 4em;
+    width: 100vw;
+    margin-left: -2.5%;
+    outline: 2px solid #00ff6c;
+    outline-offset: -2.5em;
+    color: #FFF;
+    position: relative;
+}
+
+.home-about-textbox h1
+{
+    color: #00ff6c;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: .75em;
+    background: #232323;
+    padding: 0 .145em;
+}
+
+@media (min-width: 25rem) 
+{
+    h1{
+        font-size: 2rem;
+    }
+
+    .home-about-textbox{
+        padding: 5.5em;
+    }
+
+    .home-about-textbox h1{
+        top:.6em;
+        padding: 0 .325em; 
+    }
+}
+
+@media (min-width: 60rem) 
+{
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .home-about{
+        background-image: url(https://i.postimg.cc/3JH434jY/try.jpg);
+        background-repeat: no-repeat;
+        padding-bottom: 10em;
+    }
+
+    .home-about-textbox{
+        width: 50%;
+        padding: 5em;
+        outline-offset: -3.75em;
+        margin-left: -3.5%;/*2*/
+        top: -1.75em;
+        text-align: left;
+        box-shadow: 0 0 4em 0 rbga(0,0,0,.3);
+
+    }
+
+    .home-about-textbox h1{
+        top: .75em; 
+        left: 6rem;
+        transform: translateX(0);
+    }
+}
+
+/* portfolio */
+
+.portfolio {
+    margin: 3em 0 0;
+}
+
+.port-item {
+    margin: 0;
+    position: relative;
+}
+
+.port-item img {
+    display: block;
+}
+
+.port-desc {
+    position: absolute;
+    z-index: 100;
+    bottom: 0em;
+    left: 0em;
+    right: 0em;
+    color: white;
+    background: rgba(0,0,0,.6);
+    padding-bottom: 2em;
+}
+
+.port-desc p {
+    margin: 1em;
+}
+
+@media (min-width: 37rem) {
+    .port-item {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (min-width: 60rem) {
+    .port-item {
+        width: 33.3333334%;
+        overflow: hidden;
+    }
+
+    .port-desc {
+        transform: translateY(150%);
+    }
+
+    .port-item:hover .port-desc {
+        transform: translateY(0%);
+    }
+}
+
+
+/* CTA */
+
+.cta {
+    background-color: #00ff6c;
+    padding: 4em 0;
+}
+
+
+/* Footer*/
+
+footer {
+    background: #232323;
+    color: #fff;
+    text-align: left;
+    padding: 4em 0;
+}
+
+
+
+    </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>coffee Time</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+    <body>
+
+        <header>
+            <img src="https://i.postimg.cc/dVY8NNNR/logo.png" class="logo" height="150" width="150" />
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="home-hero"> <!--parallax--bg"-->
+            <div class="container">
+                <h1 class="title"><!-- parallax--box"-->We love to make Coffee
+                <span> for the city that loves to drink it</span>
+                </h1>
+                <a href="" class="button button-accent"> See Our Work</a>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="home-about">
+
+                <div class="home-about-textbox"><!--parallax--box"-->
+                    <h1>About us</h1>
+                    <p><strong>PERFECT COFFEE MOMENTS</strong> Characterized by a very special and unimitable atmosphere, the Coffeeshop Company is a new,which was included in the UNESCO list of ,intangible cultural heritage’in 2013 </p> 
+                </div>
+            </section>
+        </div>
+
+        <section class="portfolio">
+            <h1>Some Glimpse of our Cafe</h1>
+
+            <!--portfolio items 1-->
+            <figure class="port-item">
+                <img src="https://i.postimg.cc/zXddsrWw/photo1.jpg">
+                <figcaption class="port-desc">
+                    <p>See more</p>
+                    <a href="" class="button button-accent button-small">See more</a>
+                </figcaption>
+            </figure>
+
+            <!--portfolio items 2-->
+            <figure class="port-item">
+                <img src="https://i.postimg.cc/sX9mwdsh/photo2.jpg">
+                <figcaption class="port-desc">
+                    <p>See more</p>
+                    <a href="" class="button button-accent button-small">See more</a>
+                </figcaption>
+            </figure>
+
+            <!--portfolio items 3-->
+            <figure class="port-item">
+                <img src="https://i.postimg.cc/m2rjN5qP/photo3.jpg">
+                <figcaption class="port-desc">
+                    <p>See more</p>
+                    <a href="" class="button button-accent button-small">See more</a>
+                </figcaption>
+            </figure>
+
+            <!--portfolio items 4-->
+            <figure class="port-item">
+                <img src="https://i.postimg.cc/qvPGrM7K/photo4.jpg">
+                <figcaption class="port-desc">
+                    <p>See more</p>
+                    <a href="" class="button button-accent button-small">See more</a>
+                </figcaption>
+            </figure>
+
+            <!--portfolio items 5-->
+            <figure class="port-item">
+                <img src="https://i.postimg.cc/fR9x8nvR/photo5.jpg">
+                <figcaption class="port-desc">
+                    <p>See more</p>
+                    <a href="" class="button button-accent button-small">See more</a>
+                </figcaption>
+            </figure>
+
+            <!--portfolio items 6-->
+            <figure class="port-item">
+                <img src="https://i.postimg.cc/FKvJGfRT/photo6.jpg">
+                <figcaption class="port-desc">
+                    <p>See more</p>
+                    <a href="" class="button button-accent button-small">See more</a>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h1 class="title title-cta">Like what you see?
+                    <span>Then what are you waiting for?</span>
+                </h1>
+                <a href="" class="button button-dark">Order Here</a>
+            </div>
+        </section>
+
+        <footer>
+
+            <div class="container">
+                <div class="col-3">
+                    <p>A journey through the world of excellence, quality, simplicity and precision by the medium of coffee and turn it into a sustainable partnership.We look forward to working with you!</p>
+                </div>
+
+            <div class="col-1">
+                <ul class="unstyle-list">
+                    <li><strong>Shoreditch</strong></li>
+                    <li>shoreditch</li>
+                    <li>shoreditch</li>
+                    <li>shoreditch</li>
+                </ul>
+            </div>
+            
+
+            <div class="col-1">
+                <ul class="unstyle-list">
+                    <li><strong>Shoreditch</strong></li>
+                    <li>shoreditch</li>
+                    <li>shoreditch</li>
+                    <li>shoreditch</li>
+                </ul>
+            </div>
+            
+
+            <div class="col-1">
+                <ul class="unstyle-list">
+                    <li><strong>Shoreditch</strong></li>
+                    <li>shoreditch</li>
+                    <li>shoreditch</li>
+                    <li>shoreditch</li>
+                </ul>
+            </div>
+        </div>
+        </footer>
+
+        <!--script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script> 
+        <script src="js/parallax.js"></script-->
+        <!-- I WILL TRY TO USE THIS IN NEXT UPDATE-->
+
+
+
+    </body>
+</html>
